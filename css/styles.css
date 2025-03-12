@@ -1,0 +1,650 @@
+/* General Layout */
+
+/* Main container for all content */
+.container {
+    background-color: white; /* White background */
+    max-width: 80dvw; /* Maximum width of 80% of the viewport width */
+    min-height: 80dvh; /* Ensures it takes up at least 80% of the viewport height */
+    margin: 0 auto; /* Centers it horizontally */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background: url('../images/bg800bulbs.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: aliceblue;
+    color: #333;
+    max-width: 80dvw;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+#intro p {
+    font-size: 1.25rem;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+header h3 {
+    
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+/* Logo */
+#logo img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Heading */
+.solutionhead {
+    margin: 0 0 1rem 0; /* Adds spacing below the heading */
+    font-weight: bold;
+    font-size: 1rem; /* Adjust font size */
+    text-align: left;
+}
+
+.solution {
+    display: flex; /* Enables horizontal layout */
+    align-items: start; /* Aligns text and image vertically */
+    justify-content: space-between; /* Spreads text and image apart */
+    font-size: 1rem;
+    padding: 0 3rem;
+}
+
+.solution p {
+    font-size: 1rem;
+}
+
+/* Image section: Stays on the right */
+.solution figure {
+    flex-shrink: 0; /* Prevents figure from shrinking */
+    max-width: 15rem; /* Adjust image size */
+    width: 100%; /* Ensures image scales */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    border: 6px solid #d67c3a; /* Matches the frame in your screenshot */
+    margin: 0 1rem;
+}
+
+
+
+
+/* Navigation */
+
+#headernav {
+    margin-left: auto; /* Ensures nav is pushed to the right */
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 0.8rem 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #008080;
+}
+
+/* Hero Image Styling */
+#heroimage img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    padding-bottom: 2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+}
+
+/* Back to Top Button */
+.backtotop {
+    display: block;
+    margin: 4rem auto;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.backtotop:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* About Us section */
+#aboutus h3{
+    text-align: left;
+}
+
+#aboutus hr {
+    margin-bottom: 2rem;
+}
+
+#aboutus {
+    background-color: #ffa355;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+
+#aboutus .content {
+    column-count: 2;
+    column-gap: 3rem;
+    text-align: left;
+}
+
+#aboutus .content p {
+    margin: 0 0 2rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#aboutus .content p:last-child {
+    margin-bottom: 0;
+}
+
+#aboutus p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Testimonials section */
+#testimonials h3{
+    text-align: left;
+}
+
+#testimonials hr {
+    margin-bottom: 2rem;        
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial img {
+    width: 15rem;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.testimonial p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#testimonials .testimonial p + p {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+/* Make all h3's bold */
+/* Removed this rule as it is overridden by the new h3 rule */
+
+/* Resources section */
+#resources {
+    background-color: #ffa355;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+
+#resources h2 {
+    text-align: left;
+}
+
+#resources hr {
+    margin-bottom: 2rem;
+}
+
+#resources h3 + hr {
+    margin-bottom: 1.5rem;
+}
+
+#resources .content {
+    column-count: 2;
+    column-gap: 3rem;
+    text-align: left;
+}
+
+#resources p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#resources p:last-child {
+    margin-bottom: 0;
+}
+
+#resources h3 {
+    margin-top: 2rem;
+}
+
+#resources h3:first-child {
+    margin-top: 0;
+}
+
+#resources ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#resources ul:last-child {
+    margin-bottom: 0;
+}
+
+#resources li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#resources li:last-child {
+    margin-bottom: 0;
+}
+
+/* Global hr styling */
+hr {
+    border: none;
+    height: 0.1rem;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+/* Resources section hr styling */
+#resources hr {
+    border: none;
+    border-top: 0.1rem dashed black;
+    height: 0;
+    background-color: transparent;
+}
+
+/* Contact Form Styling */
+#contact {
+    background-color: #f8f8f8;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+
+#contact h3 {
+    text-align: left;
+}
+
+#contact hr {
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d67c3a;
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-option label {
+    display: inline;
+    margin: 0;
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.submit-btn,
+.reset-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #d67c3a;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #c06a2a;
+}
+
+.reset-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.reset-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+footer h3, 
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Links and Contact section */
+.linksandcontact {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.linksandcontact > div {
+    flex: 1;
+    padding: 0 3rem;
+    border-right: 0.1rem solid black;
+}
+
+.linksandcontact > div:last-child {
+    border-right: none;
+}
+
+.linksandcontact h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.linksandcontact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.linksandcontact li {
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.linksandcontact a {
+    text-decoration: none;
+    color: #333;
+}
+
+.linksandcontact a:hover {
+    color: #008080;
+}
+
+.linksandcontact hr {
+    margin-bottom: 1.5rem;
+}
+
+/* Specific column styles */
+.quicklinks nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.quicklinks nav ul li {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.services ul,
+.contactus ul {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Stay Connected section */
+footer .stay-connected {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer .stay-connected h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+footer .stay-connected ul,
+footer > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+
+footer .stay-connected li,
+footer > ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+footer .stay-connected a,
+footer > ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .stay-connected a:hover,
+footer > ul a:hover {
+    color: #008080;
+}
+
+footer > hr {
+    margin: 2rem 0;
+}
+
+/* Thank You Page Styling */
+#thanks {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#thanks h2 {
+    font-size: 2rem;
+    color: #d67c3a;
+    margin-bottom: 1rem;
+}
+
+#thanks p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #d67c3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #c06a2a;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1000px) {
+    /* Solutions and Testimonials - image above text */
+    .solution {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .solution figure {
+        margin-bottom: 2rem;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .testimonial img {
+        margin-bottom: 1rem;
+    }
+
+    /* About Us and Resources - single column */
+    #aboutus .content,
+    #resources .content {
+        column-count: 1;
+    }
+
+    /* Footer columns */
+    .linksandcontact {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .linksandcontact > div {
+        border-right: none;
+        border-bottom: 0.1rem solid black;
+        padding-bottom: 3rem;
+    }
+
+    .linksandcontact > div:last-child {
+        border-bottom: none;
+    }
+
+    /* Footer list fixes */
+    footer .stay-connected ul,
+    footer > ul {
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+    }
+
+    footer .stay-connected ul li,
+    footer > ul li {
+        white-space: nowrap;
+    }
+
+    /* Remove extra separators when wrapping */
+    footer > ul li:last-child::after {
+        content: none;
+    }
+}
